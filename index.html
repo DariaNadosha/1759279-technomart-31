@@ -5,8 +5,233 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <header>
+      <nav>
+        <a>
+          <img src="img.symbols/technomart_logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
+        </a>
+        <form>
+          <input type="search" placeholder="Поиск:">
+          <button type="submit"><img src="img.symbols/icon-search.svg" alt="Поиск"></button>
+        </form>
+        <ul>
+          <li>
+        <a href="blank.html">Закладки<img src="img.symbols/icon-bookmark.svg" alt="Закладки"></a>
+          </li>
+          <li>
+        <a href="blank.html">Корзина<img src="img.symbols/icon-cart.svg" alt="Корзина"></a>
+        <!-- Счётчик на корзину и в закладки? -->
+          </li>
+          <li>
+        <a href="blank.html">Оформить заказ</a>
+          </li>
+      </ul>
+        <a href="blank.html">Войти<img src="img.symbols/icon-logout.svg" alt="Выйти"></a>
+        <a href="blank.html">Регистрация</a>
+        <ul>
+          <li><a href="blank.html">Главная</a></li>
+          <li><a href="blank.html">Компания</a></li>
+          <li><a href="blank.html">Новости</a></li>
+          <li><a href="blank.html">Спецпредложения</a></li>
+          <li><a href="blank.html">Доставка</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит. П</p>
+      <button type="submit"><img src="img.symbols/icon-phone.svg" alt="Телефон"></button>
+          <span>
+            <a href="tel:+78005558628">+7 800 555-86-28</a>
+          </span>
+    </header>  
+    <main>
+      <h1>Техномарт</h1>
+      <section>
+        <h2>Преимущества</h2>
+        <ul>
+        <li>
+          <h3>Материалы</h3>
+          <a href="catalog.html">На любой вкус</a>
+          <img src="objects/new.svg" width="100" height="50" alt="Новый">
+        </li> 
+        <li>
+          <h3>Инструмент</h3>
+          <a href="catalog.html">На все случаи</a>
+        </li> 
+        <li>
+          <h3>Техника</h3>
+          <a href="catalog.html">Для стройки</a>
+        </li> 
+        <li>
+          <h3>Перфораторы</h3>
+          <h4>Настоящие мужские игрушки</h4>
+          <a href="catalog.html">Открыть каталог</a>
+        </li> 
+        <li>
+          <h3>Скидки 50%</h3>
+          <a href="catalog.html">На 350 товаров</a>
+        </li> 
+        <li>
+          <h3>Доставка</h3>
+          <a href="catalog.html">Бесплатно</a>
+        </li> 
+        </ul>
+        <div class="slider">
+          <div class="slide slide1"></div>
+          <div class="slide slide2"></div>
+          <div class="slide slide3"></div>
+          <div class="slide slide4"></div>
+     </div>
+      </section>
+        <h2>Популярные товары</h2>
+        <a href="catalog.html">Все популярные товары</a>
+      <section>
+        <ul>
+          <li>
+          <a href="blank.html">
+            <h3>Перфоратор BOSCH BFG 9000</h3>
+            <img src="objects/Objectperf_1.svg" width="220" height="165" alt="Перфоратор BOSCH">
+          </a>
+            <p>32500 р.</p>
+            <!-- Для зачеркивания использовала тег "Strike", но валидатор написал, что тег устаревший и посоветовал это делать в CSS -->
+            <p><button type="button">25500 р.</button></p>
+          </li> 
+          
+          <li>
+          <a href="blank.html">
+            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <img src="objects/Objectperf_2.svg" width="220" height="165" alt="Перфоратор BOSCH">
+          </a>
+            <p>2500 р.</p>
+            <p><button type="button">15500 р.</button></p>
+          </li> 
+          <li>
+          <a href="blank.html">
+            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <img src="objects/Objectperf_3.svg" width="220" height="165" alt="Перфоратор BOSCH">
+          </a> 
+            <p>30500 р.</p>
+            <p><button type="button">25500 р.</button></p>
+          </li> 
+          <li>
+          <a href="blank.html">
+            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <img src="objects/Objectperf_4.svg" width="220" height="165" alt="Перфоратор BOSCH">
+            <img src="objects/new.svg" width="100" height="50" alt="Новый">
+          </a>
+          <p>22500 р.</p>
+          <p><button type="button">12500 р.</button></p>
+          </li> 
+          </ul>
+      </section>
+      <p>
+        <h2>Популярные производители</h2>
+        <a href="blank.html">Все производители</a>
+      <p>
+        <ul>
+          <li>
+        <img src="objects/bosh.jpg" width="220" height="145" alt="BOSCH">
+        </li>
+        <li>
+          <img src="objects/makita.jpg" width="220" height="145" alt="Makita">
+          </li>
+        <li>
+          <img src="objects/dewalt.jpg" width="220" height="145" alt="DeWalt">
+            </li>
+        <li>
+          <img src="objects/interscom.jpg" width="220" height="145" alt="ИНТЕРСКОЛ">
+            </li>
+        <li>
+          <img src="objects/hitachi.jpg" width="220" height="145" alt="Hitachi">
+            </li>
+        <li>
+                  <img src="objects/lg.jpg" width="220" height="145" alt="lg">
+            </li>
+            <li>
+              <img src="objects/aeg.jpg" width="220" height="145" alt="AEG">
+        </li>
+        <li>
+          <img src="objects/metabo.jpg" width="220" height="145" alt="Metabo">
+    </li>
+      </ul>
+      <section>
+        <h2>Сервисы</h2>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
+        <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <!-- Доставка, Гарантия, Кредит - 3 кнопки, после переключения которых меняется текст справа от них?  -->
+      </section>
+      <section>
+        <h2>КОМПАНИЯ "ТЕХНОМАРТ"</h2>
+        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для <br> ремонта и строительства не оставит равнодушными любителей сэкономить на <br> гастарбайтерах.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! </p>
+        <p>Техномарт работает со многими транспортными компаниями:
+          <strong>Деловые линии</strong>
+          <strong>Автотрейдинг</strong>
+          <strong>ЖелДорЭкспедиция</strong>
+        </p>
+        <a href="blank.html">Подробнее о компании</a>
+      </section>
+      <section>
+        <h2>КОНТАКТЫ</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+        <!-- Карта -->
+        <a href="blank.html">Заблудились? Напишите нам!</a>
+      </section>
+      <section>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="appointment-name">Ваше имя</label>
+            <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="appointment-email">Ваш e-mail</label>
+            <input id="appointment-email" type="text" name="name" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="appointment-text">Текст письма</label>
+            <textarea name="comment" id="comment-field" rows="5">В свободной форме</textarea>
+          </p>
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+      </main>
+    <footer>
+      <section>
+        <a>
+          <img src="img.symbols/technomart_logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
+        </a>
+        <br>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
+        <br>+7 800 555-86-28
+        <ul>
+          <li><a href="blank.html">Компания</a></li>
+          <li><a href="blank.html">Новости</a></li>
+          <li><a href="blank.html">Каталог</a></li>
+          <li><a href="blank.html">Доставка</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+        <ul>
+          <li><a href="blank.html">Материалы</a></li>
+          <li><a href="blank.html">Техника</a></li>
+          <li><a href="blank.html">Инструмент</a></li>
+          <li><a href="blank.html">Спецпредложения</a></li>
+        </ul>
+      </section>
+      <section>
+    <ul>
+      <li>
+        <a href="#">Вконтакте<img src="img.symbols/logo_vk.svg" alt="ВК"></a>
+      </li>
+      <li>
+        <a href="#">Фейсбук<img src="img.symbols/fb_logo.svg" alt="ФБ"></a>
+      </li>
+      <li>
+        <a href="#">Инстаграм<img src="img.symbols/logo_insta.svg" alt="Инстаграм"></a>
+      </li>
+    </ul>
+      </section>
+      <p>Обратная связь: <address>mail@htmlacademy.ru</address>
+      <br>Разработано: htmlacademy.ru</p>
+    </footer>
+    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p> -->
   </body>
 </html>

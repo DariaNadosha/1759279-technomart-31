@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт: Каталог</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -10,19 +12,19 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <section class="upper-footer">
+      <section class="upper-header">
        <a href="img/other/logo.svg" width="220" height="43" alt="Логотип Техномарт">Логотип</a>
-       <form class="menu">
+       <form class="search">
          <input type="search" placeholder="Поиск:">
          <button type="submit">Поиск</button>
        </form>
-       <a class="menu" href="blank.html" class="menu">Закладки</a>
-       <a class="menu" href="blank.html" class="menu">Корзина</a>
-       <a class="catalog-button-green" href="blank.html" class="make-order">Оформить заказ</a>
+       <a class="bookmark" href="blank.html" >Закладки</a>
+       <a class="cart" href="blank.html" >Корзина</a>
+       <a class="catalog-button-green" href="blank.html">Оформить заказ</a>
       </section>
-      <p class="information">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      <p class="head-information">Интернет-магазин строительных материалов и инструментов для ремонта</p>
       <a class="telephone-number" href="tel:+78005558628">+7 800 555-86-28</a>
-      <p class="header-information">г. Санкт-Петербург, наб. Реки Карповки, 5 лит. П</p>
+      <p class="text">г. Санкт-Петербург, наб. Реки Карповки, 5 лит. П</p>
       <a class="header-user" href="blank.html" >Равшан Джамшутович</a>
       <a class="user-information" href="blank.html" >Мои заказы</a>
       <a class="user-information" href="blank.html" >Личный кабинет</a>
@@ -37,15 +39,14 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
-      <!-- название класса списала из лекции -->
-      <ul   class="bread-crumbs">
+    <main>
+      <ul class="bread-crumbs">
         <li><a href="index.html">Домой</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="catalog.html">Инструмент</a></li>
         <li>Перфораторы</li>
       </ul>
-      <h1 class="head-perforators">Перфораторы</h1>
+      <h1 class="header-name">Перфораторы</h1>
       <aside class="aside-panel">
         <from class="aside-form" action="#">
           <h2 class="head-filter">Фильтр:</h2>
@@ -71,12 +72,11 @@
           <fieldset>
             <legend class="head-power">Питание:</legend>
             <input class="radio-checked"type="radio" name="area6" checked value="Аккумуляторные">
-            <label for="area6>Аккумуляторные</label>
+            <label for="area6">Аккумуляторные</label>
             <input class="radio-nonchecked" type="radio" name="area7" value="Сетевые">
-            <label for="area7>Сетевые</label>
+            <label for="area7">Сетевые</label>
           </fieldset>
           <button type="submit">Показать</button>
-          <!-- "Показать" - должна быть кнопка или ссылка? -->
         </from>
       </aside>
       <section>
@@ -205,16 +205,16 @@
       </section>
       <section class="paragraph-information">
         <h2 class="head-paragraph-information">Пара слов о перфораторах</h2>
-        <p class="text-paragraph-information">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
-        <p class="text-paragraph-information"></p>>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.</p>
-        <p class="text-paragraph-information"></p>>В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        <p class="text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
+        <p class="text"></p>>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.</p>
+        <p class="text"></p>>В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </section>
     </main>
     <footer class="main-footer">
       <section>
-        <a href="img/other/logo.svg" width="220" height="43" alt="Логотип Техномарт">Логотип</a>
-        <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П <br>+7 800 555-86-28</p>
-        <ul>
+        <a class="logo" href="#">Логотип</a>
+        <p class="text-footer" >г. Санкт-Петербург, наб. Реки Карповки, 5 лит П <br>+7 800 555-86-28</p>
+        <ul class="navigation-white">
           <li><a href="blank.html">Компания</a></li>
           <li><a href="blank.html">Новости</a></li>
           <li><a href="blank.html">Каталог</a></li>
@@ -229,15 +229,15 @@
         </ul>
       </section>
       <section class="bottom-footer">
-        <p>&copy; 2010–2021 Компания «Техномарт» <br>Все права защищены</p>
-        <a class="vk" href="#">Вконтакте</a>
-        <a class="fb" href="#">Фейсбук</a>
-        <a class="insta" href="#">Инстаграм</a>
+        <p class="footer-cite">&copy; 2010–2021 Компания «Техномарт» <br>Все права защищены</p>
+        <a class="socials" href="#">Вконтакте</a>
+        <a class="socials" href="#">Фейсбук</a>
+        <a class="socials" href="#">Инстаграм</a>
       </section>
-      <p>Обратная связь:</p>
-      <a class="ref-mail" href="mail@htmlacademy.ru"></a>mail@htmlacademy.ru</a>
-      <p>Разработано - </p>
-      <a class="ref-site" href="htmlacademy.ru">htmlacademy.ru</a>
+      <p class="text-ref">Обратная связь:</p>
+      <a class="ref" href="mail@htmlacademy.ru"></a>mail@htmlacademy.ru</a>
+      <p class="text-ref">Разработано - </p>
+      <a class="ref" href="htmlacademy.ru">htmlacademy.ru</a>
     </footer>
     <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p> -->
   </body>

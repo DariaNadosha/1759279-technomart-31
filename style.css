@@ -12,7 +12,7 @@
   --extra-light-grey: #F3F7F9;
   --blue: #3BBCE3;
   --light-green: #8ED78F;
-  --special-ylellow : #FFBF47;;
+  --special-ylellow: #FFBF47;
   --violet: #DC91D8;
   --milk: #F9F5F0;
   --dark-grey: #A9A9A9;
@@ -27,16 +27,13 @@
 
 /* Global */
 
-.page-body {
+.body {
   min-width: 960px;
-  margin: 0;
-  padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  width: 1200px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   color: var(--black);
-  text-transform: uppercase;
   background-color: var(--white);
   background-position: top center;
   background-repeat: no-repeat;
@@ -48,71 +45,63 @@
   line-height: 24px;
   font-weight: 400;
   color: var(--black);
-  text-transform: uppercase;
-  text-align: center;
+  text-align: left;
 }
 
 /* Header */
 
 .main-header {
   background-color: var(--background-services);
+
 }
 .upper-header {
   background-color: var(--extra-dark);
-  height: 47px;
   width: 1200px;
 }
-
-.logo {
-  background: url(img/other/logo.svg);
-  line-height: 24px;
-  font-weight: 400;
+.wrapper {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
 }
-.logo:hover {
-  background: url(img/other/logo-error.svg);
+.logo {
+  background: url(/Users/darianadosha/Documents/GitHub/1759279-technomart-31/img/other/logo.png);
+  text-indent: 100%;
+  overflow: hidden;
+  width: 220px;
+  height: 47px;
+  margin-bottom: -4px;
 }
 
 .search {
   font-family: "Cuprum", Arial, sans-serif;
-  font-size: 9px;
+  font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   color: var(--white);
-  text-transform: uppercase;
   text-align: center;
 }
-
-.bookmark {
+.menu {
   font-family: "Cuprum", Arial, sans-serif;
-  font-size: 9px;
+  font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   color: var(--white);
-  text-transform: uppercase;
   text-align: center;
-}
+  text-decoration: none;
+  text-transform: unset;
+  padding: 8px;
 
-.cart {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 9px;
-  line-height: 24px;
-  font-weight: 400;
-  color: var(--white);
-  text-transform: uppercase;
-  text-align: center;
 }
-
+.bookmark a {
+  background-image: ;
+}
+.cart a {
+  background-image: ;
+}
 .catalog-button-green {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 9px;
-  line-height: 24px;
-  font-weight: 400;
-  color: var(--white);
-  text-transform: uppercase;
-  text-align: center;
-  background-color: #8ED78F;
-  height: 42px;
-  width: 150px;
+  background-color: var(--green);
 }
 
 .head-information {
@@ -122,15 +111,11 @@
   font-weight: 400;
   font-style: italic;
   color: var(--basic-red);
-  text-transform: uppercase;
   text-align: left;
-  height: 71px;
   width: 197px;
 }
 
 .telephone-number {
-  height: 71px;
-  width: 197px;
   border: 3px solid #FFFFFF;
   box-sizing: border-box;
   font-family: "Cuprum", Arial, sans-serif;
@@ -140,40 +125,33 @@
   color: var(--basic-red);
   text-transform: uppercase;
   text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.b {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--black);
+  text-align: center;
+  text-decoration: none;
+  text-transform: unset;
+  background:black (rgba(0, 0, 0,.01));
+
 }
 
 .enter {
-  height: 121px;
-  width: 45px;
-  background-color:black;
-  opacity: 99,99;
-/* прозрачность 0,01 ? */
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: 400;
-  color: var(--black);
-  text-transform: uppercase;
-  text-align: center;
+  background-image: ;
 }
 
 .registration {
-  width: 150px;
-  height: 45px;
-  background-color:black;
-  opacity: 0,01%;
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: 400;
-  color: var(--black);
-  text-transform: uppercase;
-  text-align: center;
+  background-image: ;
 }
 
 .header-user {
   width: 299px;
-  height: 45px;
   background-color:black;
   opacity: 0,01%;
   font-family: "Cuprum", Arial, sans-serif;
@@ -181,7 +159,6 @@
   line-height: 21px;
   font-weight: 400;
   color: var(--black);
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -191,60 +168,59 @@
   line-height: 18px;
   font-weight: 400;
   color: var(--extra-grey);
-  text-transform: uppercase;
   text-align: left right;
 }
-
 .navigation {
-  width: 940px;
-  height: 60px;
   background-color:#32425C;
-  opacity: 0,01%;
+}
+
+.navigation a  {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   color: var(--white);
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.nav-main .nav-company .nav-news. nav-special-offer .nav-delivery .nav-contacts {
   text-decoration: none;
+  padding: 10px;
 }
 
 /* Blocks */
-.blocks {
+.grid-blocks {
+  display: grid;
+  grid-template-columns: 300px 300px 300x;
+  grid-template-rows: 150px 150px 150px;
 }
+
 .blocks-materials {
   width: 300px;
-  height: 123px;
   background-color: var(--yellow);
+  grid-row-start: 1;
+  grid-column-start: 1;
 }
 
 .blocks-instruments
 {
   width: 300px;
-  height: 123px;
   background-color: var(--blue);
+  grid-row-start: 1;
+  grid-column-start: 2;
 }
 
 .blocks-technicks
 {
   width: 300px;
-  height: 123px;
   background-color: var(--violet);
+  grid-row-start: 1;
+  grid-column-start: 3;
 }
 .blocks-sale
 {
   width: 300px;
-  height: 123px;
   background-color: var(--light-green);
 }
 .blocks-delivery
 {
   width: 300px;
-  height: 123px;
   background-color: var(--yellow);
 }
 
@@ -254,8 +230,7 @@
   line-height: 30x;
   font-weight: 700;
   color: var(--white);
-  text-transform: uppercase;
-  text-align: center;
+  text-align: left;
 }
 
 .blocks-button {
@@ -268,7 +243,6 @@
   text-align: center;
   background: var(--white);
   background-color: transparent;
-  height: 38px;
   width: 135px;
 }
 
@@ -277,6 +251,7 @@
   height: 266px;
   background-image: url(img/other/slider-perf.png);
   background-image: url(img/other/slider-drill.png);
+
 }
 
 .slider-name {
@@ -316,8 +291,7 @@
 }
 
 .header {
-  width: 940x;
-  height: 89px;
+  width: 940px;
   background-color:var(--milk);
 }
 
@@ -333,7 +307,6 @@
 
 .catalog-button-red {
   width: 192px;
-  height: 38px;
   background: var(--basic-red);
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
@@ -346,7 +319,6 @@
 
 .catalog-item {
   width: 220x;
-  height: 318px;
   background-color:var(--white);
 }
 
@@ -355,7 +327,6 @@
 }
 
 .catalog-name {
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -365,7 +336,6 @@
 }
 
 .catalog-old-price {
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -377,9 +347,7 @@
 
 .catalog-button-arrow {
   width: 141px;
-  height: 38px;
   background: var(--basic-red);
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -392,13 +360,11 @@
 .item-darkside
 {
   width: 220x;
-  height: 318px;
   background-color:var(--white);
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
 }
 .darkside-button-buy {
   width: 135px;
-  height: 38px;
   background: var(--green);
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
@@ -411,7 +377,6 @@
 
 .darkside-button-bmark {
   width: 135px;
-  height: 38px;
   background: var(--white);
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
@@ -428,7 +393,6 @@
 
 .producers-img {
   width: 220x;
-  height: 145px;
   background-color:var(--white);
   border: 1px solid #EAEAEA
 }
@@ -437,7 +401,6 @@
 
 .services {
   width: 1200x;
-  height: 522px;
   background-color:var(--background-services);
 }
 
@@ -456,7 +419,6 @@
 }
 .contacts-button {
   width: 300px;
-  height: 38px;
   background: var(--basic-red);
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
@@ -498,7 +460,6 @@
 }
 .bottom-footer {
   width: 1200x;
-  height: 107px;
   background-color:var(--extra-dark);
 }
 .footer-cite {
@@ -511,7 +472,6 @@
   text-align: center;
 }
 .socials {
-  height: 44px;
   width: 44px;
   border-radius: 0px;
   background: linear-gradient(0deg, #212A3A, #212A3A);
@@ -539,7 +499,6 @@
 /* Catalog-aside */
 
 .bread-crumbs {
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 700;
@@ -550,10 +509,8 @@
 }
 
 .aside-panel {
-  height: 720px;
   width: 220px;
   background-color: var(--white);
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18x;
   font-weight: 700;
@@ -566,10 +523,8 @@
 }
 
 .head-filter {
-  height: 38px;
   width: 220px;
   background-color: var(--extra-light-grey);
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18x;
   font-weight: 400;
@@ -580,7 +535,6 @@
 }
 
 .head-manufacterers {
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 30x;
   font-weight: 700;

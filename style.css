@@ -350,7 +350,8 @@
   font-weight: 400;
   color: var(--white);
   text-transform: uppercase;
-  text-align: center;
+
+
 }
 
 .catalog-item {

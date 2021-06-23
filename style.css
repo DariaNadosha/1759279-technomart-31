@@ -465,6 +465,15 @@
   width: 1200x;
   background-color:var(--background-services);
 }
+.header-services {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: var(--black);
+  text-transform: uppercase;
+  text-align: left;
+}
 
 .services-button {
 

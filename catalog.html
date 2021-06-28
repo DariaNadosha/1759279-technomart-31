@@ -14,33 +14,40 @@
     <link rel="apple-touch-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body class="page-body">
+  <body class="body">
     <header class="main-header">
       <section class="upper-header">
-       <a href="img/other/logo.svg" width="220" height="43" alt="Логотип Техномарт">Логотип</a>
-       <form class="search">
-         <input type="search" placeholder="Поиск:">
-         <button type="submit">Поиск</button>
-       </form>
-       <a class="bookmark" href="blank.html" >Закладки</a>
-       <a class="cart" href="blank.html" >Корзина</a>
-       <a class="catalog-button-green" href="blank.html">Оформить заказ</a>
+        <div class="wrapper">
+          <a class="logo" href="#">Логотип</a>
+          <form class="search">
+            <input type="search" placeholder="Поиск:">
+            <button type="submit">Поиск</button>
+          </form>
+          <a class="menu bookmark" href="blank.html">Закладки: 0</a>
+          <a class="menu cart" href="blank.html">Корзина: 0</a>
+          <a class="menu catalog-button-green" href="blank.html">Оформить заказ</a>
+        </div>
       </section>
-      <p class="head-information">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-      <a class="telephone-number" href="tel:+78005558628">+7 800 555-86-28</a>
-      <p class="text">г. Санкт-Петербург, наб. Реки Карповки, 5 лит. П</p>
-      <a class="header-user" href="blank.html" >Равшан Джамшутович</a>
-      <a class="user-information" href="blank.html" >Мои заказы</a>
-      <a class="user-information" href="blank.html" >Личный кабинет</a>
+      <div class="wrapper">
+        <p class="head-information">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <div>
+          <a class="telephone-number" href="tel:+78005558628">+7 800 555-86-28</a>
+          <p class="text">г. Санкт-Петербург, наб. Реки Карповки, 5 лит. П</p>
+        </div>
+      </div>
+        <a class="b header-user" href="blank.html" >Равшан Джамшутович</a>
+        <a class="user-information" href="blank.html" >Мои заказы</a>
+        <a class="user-information" href="blank.html" >Личный кабинет</a>
+      </div>
       <nav class="navigation">
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="blank.html">Компания</a></li>
-          <li><a href="blank.html">Новости</a></li>
-          <li><a href="blank.html">Спецпредложения</a></li>
-          <li><a href="blank.html">Доставка</a></li>
-          <li><a href="blank.html">Контакты</a></li>
-        </ul>
+        <div class="wrapper">
+          <a href="index.html">Главная</a>
+          <a href="blank.html">Компания</a>
+          <a href="blank.html">Новости</a>
+          <a href="blank.html">Спецпредложения</a>
+          <a href="blank.html">Доставка</a>
+          <a href="blank.html">Контакты</a>
+        </div>
       </nav>
     </header>
     <main>
@@ -207,41 +214,45 @@
           <li><a href="#">Следующая</a></li>
         </ul>
       </section>
-      <section class="paragraph-information">
-        <h2 class="head-paragraph-information">Пара слов о перфораторах</h2>
-        <p class="text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
-        <p class="text"></p>>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.</p>
-        <p class="text"></p>>В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+      <section class="services">
+        <div>
+          <h2 class="services-header">Пара слов о перфораторах</h2>
+          <p class="text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
+          <p class="text"></p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.</p>
+          <p class="text"></p>В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
-      <section>
-        <a class="logo" href="#">Логотип</a>
-        <p class="text-footer" >г. Санкт-Петербург, наб. Реки Карповки, 5 лит П <br>+7 800 555-86-28</p>
-        <ul class="navigation-white">
-          <li><a href="blank.html">Компания</a></li>
-          <li><a href="blank.html">Новости</a></li>
-          <li><a href="blank.html">Каталог</a></li>
-          <li><a href="blank.html">Доставка</a></li>
-          <li><a href="blank.html">Контакты</a></li>
-        </ul>
-        <ul class="navigation-yellow">
-          <li><a href="blank.html">Материалы</a></li>
-          <li><a href="blank.html">Техника</a></li>
-          <li><a href="blank.html">Инструмент</a></li>
-          <li><a href="blank.html">Спецпредложения</a></li>
-        </ul>
+      <section class="wrapper">
+        <a class="footer-logo" href="#">Логотип</a>
+        <div class="nav-white">
+          <a href="blank.html">Компания</a>
+          <a href="blank.html">Новости</a>
+          <a href="blank.html">Каталог</a>
+          <a href="blank.html">Доставка</a>
+          <a href="blank.html">Контакты</a>
+        </div>
+      </section>
+      <section class="wrapper">
+        <p class="text-footer">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П <br>+7 800 555-86-28</p>
+        <div class="nav-yellow">
+          <a href="blank.html">Материалы</a>
+          <a href="blank.html">Техника</a>
+          <a href="blank.html">Инструмент</a>
+          <a href="blank.html">Спецпредложения</a>
+        </div>
       </section>
       <section class="bottom-footer">
-        <p class="footer-cite">&copy; 2010–2021 Компания «Техномарт» <br>Все права защищены</p>
-        <a class="socials" href="#">Вконтакте</a>
-        <a class="socials" href="#">Фейсбук</a>
-        <a class="socials" href="#">Инстаграм</a>
+      <section class="wrapper">
+          <p class="footer-cite">&copy; 2010–2021 Компания «Техномарт» <br>Все права защищены</p>
+          <a class="socials vk" href="#">Вконтакте</a>
+          <a class="socials fb" href="#">Фейсбук</a>
+          <a class="socials insta" href="#">Инстаграм</a>
+          <p class="text-ref">Обратная связь:<br>  <a class="ref" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+          <p class="text-ref">Разработано - <br> <a class="ref" href="htmlacademy.ru">htmlacademy.ru</a></p>
+        </section>
       </section>
-      <p class="text-ref">Обратная связь:</p>
-      <a class="ref" href="mail@htmlacademy.ru"></a>mail@htmlacademy.ru</a>
-      <p class="text-ref">Разработано - </p>
-      <a class="ref" href="htmlacademy.ru">htmlacademy.ru</a>
     </footer>
     <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p> -->
   </body>

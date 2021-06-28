@@ -37,10 +37,10 @@
   background-color: var(--white);
   background-position: top center;
   background-repeat: no-repeat;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .text {
-  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -74,6 +74,8 @@
   width: 220px;
   height: 47px;
   margin-bottom: -4px;
+  /* position: absolute;
+  left: 130px; */
 }
 
 .search {
@@ -196,7 +198,7 @@
 
 .blocks-materials {
   width: 300px;
-  background-color: var(--yellow);
+  background-color: var(--special-ylellow);
   grid-row: 1 / 2;
   grid-column: 1 / 2;
 }
@@ -236,7 +238,7 @@
 .blocks-delivery
 {
   width: 300px;
-  background-color: var(--yellow);
+  background-color: var(--special-ylellow);
   grid-row: 3 / 4;
   grid-column: 3 / 4;
 }
@@ -248,9 +250,12 @@
   font-weight: 700;
   color: var(--white);
   text-align: left;
+  margin: 20px 30px;
 }
 
 .blocks-button {
+  /* background: var(--white) (rgba(0, 0, 0,.03)); */
+  background:black (rgba(0, 0, 0,.05));
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -258,10 +263,10 @@
   color: var(--white);
   text-transform: uppercase;
   text-align: center;
-  background: var(--white);
-  background-color: transparent;
-  width: 135px;
+  text-decoration: none;
+  padding: 5px 10px;
 }
+
 .grid-items {
   display: grid;
   grid-template-rows: repeat (2, 200px);
@@ -288,14 +293,14 @@
 
 .slider-name {
   font-family: "Cuprum", Arial, sans-serif;
-  font-size: 36x;
-  line-height: 36x;
+  font-size: 36px;
+  line-height: 36px;
   font-weight: 700;
   color: var(--white);
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
+  padding: 0px 20px;
 }
-
 .slider-subtitle {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -303,7 +308,8 @@
   font-weight: 700;
   color: var(--white);
   text-transform: uppercase;
-  text-align: right;
+  text-align: left;
+  padding: 0px 20px;
 }
 .header {
   width: 940px;
@@ -319,9 +325,11 @@
   font-weight: 400;
   color: var(--black);
   text-transform: uppercase;
-  text-align: right;
+  text-align: left;
   grid-row: 1 / 2;
   grid-column: 1 / 5;
+  margin: 30px;
+  float: left;
 }
 
 .catalog-button-red {
@@ -334,6 +342,11 @@
   text-transform: uppercase;
   padding: 5px 10px;
   text-decoration: none;
+}
+.btn-catalog {
+  float: left;
+  margin: 30px 30px 30px 20px;
+  padding: 10px 40px;
 }
 
 .catalog-item {
@@ -353,7 +366,11 @@
   font-size: 18px;
   font-weight: 700;
   color: var(--black);
-  text-align: left;
+  text-align: center;
+  text-decoration: none;
+  /* не работает */
+}
+.catalog-ref {
   text-decoration: none;
 }
 
@@ -361,7 +378,7 @@
   font-size: 17px;
   font-weight: 700;
   color: var(--dark-grey);
-  text-align: left;
+  text-align: center;
   text-decoration: line-through;
 }
 
@@ -374,10 +391,28 @@
   color: var(--white);
   text-transform: uppercase;
   text-align: center;
+  padding: 5px 25px;
+  border: 0;
+  position: relative;
+  text-decoration: none;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+  margin: 50px 50px 50px 50px;
 }
+.btn-producers {
+  float: right;
+  margin: 30px 30px 30px 50px;
+  padding: 10px 20px;
+}
+
+.btn-items {
+  float: right;
+  margin: 30px 30px 30px 50px;
+  padding: 10px 20px;
+}
+
 /* сделать заостренной */
 
-.item-darkside
+/* .item-darkside
 {
   width: 220x;
   background-color:var(--white);
@@ -405,7 +440,7 @@
   color: var(--black);
   text-transform: uppercase;
   text-align: center;
-}
+} */
 
 .grid-producers {
   display: grid;
@@ -455,17 +490,18 @@
   grid-column: 4 / 5;
 }
 
-
-
-
 /* Services */
 
 .services {
   width: 1200x;
   background-color:var(--background-services);
 }
-
-
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat (2, 50%);
+  grid-template-rows: repeat (2, auto);
+  grid-gap: 0px;
+}
 
 .services-header {
   font-family: "Cuprum", Arial, sans-serif;
@@ -474,10 +510,29 @@
   font-weight: 400;
   color: var(--black);
   text-transform: uppercase;
-  text-align: center;
+  /* margin-bottom: 25px;
+  margin-left: -70px; */
 }
 
+.services-text {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--black);
+  margin: 40px 0px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--black);
+  text-align: left;
+} */
+
 .services-button {
+  font-family: "Cuprum", Arial, sans-serif;
   background-color:var(--extra-grey);
   border: 1px solid transparent;
   color: white;
@@ -493,25 +548,51 @@
   background-color:var(--white);
   color: black;
 }
-.services-text {
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: 400;
-  color: var(--black);
-  text-align: center;
+.box13 {
+  grid-row: 1;
+  grid-column: 1 / 2;
+  margin: 40px 0px 0px -170px;
 }
-.service-list {
+.box14 {
+  grid-row: 2;
+  grid-column: 1;
+  margin: 50px 0px 80px -170px;
+}
+.box15 {
+  grid-row: 2;
+  grid-column: 2;
+  margin: 50px 0px 0px -420px;
+}
 
+.contacts-grid {
+  display: grid;
+  grid-template-columns: repeat (2, 50%);
+  grid-gap: 0px;
+}
+.box16 {
+  grid-column: 1;
+  margin-left: -50px;
+}
+.box17 {
+  grid-column: 2;
+}
+.img-map {
+  margin: 20px 0px 30px 0px;
+  width: 300px;
+  height: 158px;
 }
 
 .list-name {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: 400;
   color: var(--black);
-  text-transform: uppercase;
-  text-align: center;
+  text-align: left;
+  list-style: none;
+}
+.list {
+  margin: 0px 0px 40px 0px;
 }
 .contacts-button {
   width: 300px;
@@ -524,36 +605,67 @@
   text-transform: uppercase;
   text-align: center;
 }
-
+.btn-contacts {
+  padding: 15px 61px;
+}
+.btn-company {
+  padding: 15px 50px;
+}
 /* Footer */
 
-.text-footer {
+.main-footer {
+  background-color: var(--extra-grey);
+}
+.footer-logo {
+  background: url(/Users/darianadosha/Documents/GitHub/1759279-technomart-31/img/other/footer-logo.png);
+  text-indent: 100%;
+  overflow: hidden;
+  width: 220px;
+  height: 68px;
+  margin: 0px 0px 0px -25px;
+}
+  .text-footer {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   color: var(--white);
-  text-transform: uppercase;
-  text-align: center;
+  text-align: left;
+  margin: auto;
 }
-.navigation-white {
+.navigation-footer {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  /* width: 546px;
+  margin-bottom: 30px; */
+}
+
+.nav-white {
+  margin: 30px 0px 0px 40px;
+}
+.nav-white a {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  color: var(--background-services);
-  text-transform: uppercase;
-  text-align: center;
+  color: var(--white);
+  text-decoration: none;
+  padding: 0px 29px;
 }
-.navigation-yellow {
+.nav-yellow {
+  /* margin: 80px 0px 0px -60px; */
+}
+.nav-yellow a {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   color: var(--yellow);
-  text-transform: uppercase;
-  text-align: center;
+  text-decoration: none;
+  padding: 0px 29px;
 }
+
 .bottom-footer {
   width: 1200x;
   background-color:var(--extra-dark);
@@ -564,14 +676,26 @@
   line-height: 18px;
   font-weight: 400;
   color: var(--white);
-  text-transform: uppercase;
-  text-align: center;
+  text-align: left;
 }
 .socials {
   width: 44px;
   border-radius: 0px;
   background: linear-gradient(0deg, #212A3A, #212A3A);
+  text-indent: 100%;
+  overflow: hidden;
+  /* position: absolute; */
+}
 
+.vk {
+  background: url(/Users/darianadosha/Documents/GitHub/1759279-technomart-31/img/other/.vk.png);
+
+}
+.fb {
+  background: url(/Users/darianadosha/Documents/GitHub/1759279-technomart-31/img/other/.fb.png);
+}
+.insta {
+  background: url(/Users/darianadosha/Documents/GitHub/1759279-technomart-31/img/other/.insta.png);
 }
 .ref {
   font-family: "Cuprum", Arial, sans-serif;
@@ -579,8 +703,8 @@
   line-height: 18px;
   font-weight: 400;
   color: var(--yellow);
-  text-transform: uppercase;
-  text-align: center;
+  text-align: left;
+  text-decoration: none;
 }
 .text-ref {
   font-family: "Cuprum", Arial, sans-serif;
@@ -588,8 +712,7 @@
   line-height: 18px;
   font-weight: 400;
   color: var(--white);
-  text-transform: uppercase;
-  text-align: center;
+  text-align: left;
 }
 
 /* Catalog-aside */

@@ -39,7 +39,8 @@
   background-repeat: no-repeat;
   font-family: "PT Sans", Arial, sans-serif;
   text-align: left;
-  text-decoration: none}
+  text-decoration: none;}
+
 
 /* Header main */
 .main-header {
@@ -64,18 +65,31 @@
   margin-bottom: -4px;
   /* position: absolute;
   left: 130px; */}
+.logo:focus {
+  background: url(Users/darianadosha/Documents/GitHub/1759279-technomart-31/img/other/logo-error.png);}
 .search {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   color: var(--white);
-  text-align: center;}
+  text-align: center;
+  padding: 8px;}
+.search-button {
+  cursor: pointer;}
+.search-button::before {
+  content: url(/img/other/icon-search.svg);
+  width: 20px;
+  float: left;
+  margin-right: 5px;
+  margin-top: -2px;}
+
 .menu {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   color: var(--white);
   text-align: center;
   text-transform: unset;
-  padding: 8px;}
+  padding: 8px;
+  text-decoration: none}
 .bookmark a {
   background-image: ;
   text-decoration: none;}
@@ -84,13 +98,19 @@
   text-decoration: none;}
 .catalog-button-green {
   background-color: var(--green);}
+.catalog-button-green:hover {
+  background-color:#5FBB2D ;}
+.catalog-button-green:focus {
+  background-color:var(--green) ;
+  color: rgba(255, 255, 255, 0.5);}
 .head-information {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
   color: var(--basic-red);
-  width: 197px;}
+  width: 197px;
+}
 .telephone-number {
   border: 3px solid #FFFFFF;
   box-sizing: border-box;
@@ -101,35 +121,57 @@
   color: var(--basic-red);
   text-transform: uppercase;
   text-align: center;
-  padding: 10px;
-  text-decoration: none;}
+  padding: 10px 70px;
+  text-decoration: none;
+}
 .text {
   font-size: 14px;}
 .b {
   font-family: "Cuprum", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 21px;
   text-align: center;
   text-transform: unset;
-  background:black (rgba(0, 0, 0,.01));}
-.enter {
-  background-image: ;}
+  background:rgba(0, 0, 0,0.1);
+  /* если выставлять 0.0001 фон кнопуки теряется */
+  padding: 10px 30px;
+  margin: 5px;
+  text-decoration: none;
+  color: var(--black);}
+.enter:hover {
+  color: var(--basic-red);}
+.enter:focus {
+  color: var(--light-grey);}
+.registration:hover {
+  color: var(--basic-red);}
+.registration:focus {
+  color: var(--light-grey);}
+
+.enter a{
+  background-image: url(..//img/other/icon-login.svg);
+  color: #000000;
+}
 .registration {
   background-image: ;}
 .navigation {
   background-color:#32425C;}
 .navigation a  {
   font-family: "Cuprum", Arial, sans-serif;
-  font-size: 18px; 
+  font-size: 18px;
   color: var(--white);
-  padding: 10px;
+  padding: 20px;
   text-decoration: none;}
+.navigation a:hover {
+  background-color:#293449 ;}
+.navigation a:focus {
+  background-color: #1D2739 ;
+  color: rgba(255, 255, 255, 0.5);}
 
 /* Blocks */
 
 .grid-blocks {
   display: grid;
-  grid-template-columns: repeat (3, 50px);
-  grid-template-rows: repeat (3, 150px);
+  grid-template-columns: repeat (3);
+  grid-template-rows: repeat (3);
   grid-gap: 20px;}
 .blocks-materials {
   width: 300px;
@@ -148,7 +190,7 @@
   grid-column: 3 / 4;}
 .slider {
   width: 620px;
-  height: 266px;
+  /* height: 266px; */
   background-image: url(img/other/slider-perf.png);
   background-image: url(img/other/slider-drill.png);
   grid-row: 2 / 4;
@@ -175,16 +217,58 @@
   line-height: 18px;
   color: var(--white);
   text-transform: uppercase;
-  padding: 5px 10px;}
+  padding: 5px 10px;
+  text-decoration: none;
+}
+.catalog-button-red:hover {
+  background-color:#CA2C37 ;}
+.catalog-button-red:focus {
+  background-color: var(--error) ;}
+
 .btn-catalog {
   float: left;
   margin: 30px 30px 30px 20px;
   padding: 10px 40px;}
+
+.item-darkside {
+  width: 220;
+  height: 165;
+  display: flex;
+  flex-direction:column;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+
+}
+.catalog-button-buy {
+  background: var(--green);
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.catalog-button-cart {
+  background: var(--white);
+  border: 1px solid var(--green);
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--black);
+  text-transform: uppercase;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+
 .blocks-sale{
   width: 300px;
   background-color: var(--light-green);
   grid-row: 2 / 3;
-  grid-column: 3 / 4;}
+  grid-column: 3 / 4;
+  background-image: url(/img/other/cart-white.svg);
+}
 .blocks-name {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 24px;
@@ -193,20 +277,26 @@
   color: var(--white);
   margin: 20px 30px;}
 .blocks-button {
-  /* background: var(--white) (rgba(0, 0, 0,.03)); */
-  background:black (rgba(0, 0, 0,.05));
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: var(--white);
   text-transform: uppercase;
   text-align: center;
-  padding: 5px 10px;}
-.blocks-delivery{
-  width: 300px;
+  text-decoration: none;
+  background:rgba(255, 255, 255,0.3);
+  padding: 10px 30px;
+  margin: 10px 30px;}
+.blocks-button:hover {
+  background-color: rgba(197, 197, 197, 0.3)}
+.blocks-button:focus {
+  background-color: rgba(197, 197, 197, 0.3)}
+.blocks-delivery {
   background-color: var(--special-ylellow);
   grid-row: 3 / 4;
-  grid-column: 3 / 4;}
+  grid-column: 3 / 4;
+  background-image: url(../img/other/instruments-drill-white.svg);}
+
 
 /* Популярные товары */
 
@@ -243,6 +333,14 @@
 .catalog-image {
   width: 184px;
   height: 164px;}
+.image-darkside {
+  display: none;}
+
+/* .catalog-image + .image-darkside {
+  display: none;} */
+.catalog-image:hover + .image-darkside {display: block;}
+
+
 .catalog-name {
   font-size: 18px;
   font-weight: 700;
@@ -532,11 +630,11 @@
 	height: 0;
 	border: none;
 	border-bottom: 2px dotted var(--basic-red);}
-a.arrow-up:after { 
-  content: '\25b2'; 
+a.arrow-up:after {
+  content: '\25b2';
   color: var(--basic-red); }
-a.arrow-down:after { 
-  content: '\25bc'; 
+a.arrow-down:after {
+  content: '\25bc';
   color:var(--light-grey); }
 
 /* Боковая панель */

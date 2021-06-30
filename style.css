@@ -337,15 +337,19 @@
   display: none;}
 
 /* .catalog-image + .image-darkside {
-  display: none;} */
+  display: none;}
 .catalog-image:hover + .image-darkside {display: block;}
-
+ */
 
 .catalog-name {
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
-  text-align: center;}
+  /* не убирается подчеркивание */
+  text-align: center;
+  color: var(--black);
+}
+
 .catalog-old-price {
   font-size: 17px;
   font-weight: 700;
@@ -365,7 +369,9 @@
   border: 0;
   position: relative;
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
-  margin: 50px 50px 50px 50px;}
+  margin: 50px 50px 50px 50px;
+  text-decoration: none;
+}
 .box1 {
   grid-row: 2 / 3;
   grid-column:  1 / 2;}

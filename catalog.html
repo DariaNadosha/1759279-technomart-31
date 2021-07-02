@@ -34,20 +34,23 @@
           <a class="telephone-number" href="tel:+78005558628">+7 800 555-86-28</a>
           <p class="text">г. Санкт-Петербург, наб. Реки Карповки, 5 лит. П</p>
         </div>
+        <div class="account">
         <a class="b header-user" href="blank.html" >Равшан Джамшутович</a>
+        <div class="myorders">
         <a class="user-information" href="blank.html" >Мои заказы</a>
         <a class="user-information" href="blank.html" >Личный кабинет</a>
       </div>
-      <nav class="navigation">
-        <div class="wrapper">
+      </div>
+      </div>
+        <nav class="navigation wrapper">
           <a href="index.html">Главная</a>
           <a href="blank.html">Компания</a>
+          <a href="blank.html">Каталог</a>
           <a href="blank.html">Новости</a>
           <a href="blank.html">Спецпредложения</a>
           <a href="blank.html">Доставка</a>
           <a href="blank.html">Контакты</a>
-        </div>
-      </nav>
+        </nav>
     </header>
     <main>
       <div class="bread-crumbs wrapper">
@@ -58,22 +61,19 @@
         <a href="catalog.html">Инструмент</a>
         <p class="arrow-crumbs"></p>
         <a href="catalog.html">Перфораторы</a>
-      </div>/
+      </div>
       <header class="catalog-header wrapper">
         <h1 class="catalog-name">Перфораторы</h1>
       </header>
-      <section>
-        <div>
-          <h2 class="sort head-filter">Фильтр:</h2>
-        </div>
-        <div>
-          <p class="sort">Сортировка:</p>
-          <a class="sort sort-price" href="#">По цене</a>
-          <a class="sort type" href="#">По типу</a>
-          <a class="sort function" href="#">По функционалу</a>
+      <section class="wrapper" >
+          <p class="filter-sort">Фильтр:</p>
+          <p class="sort">Сортировка:
+          <a class="sort-price" href="#">По цене</a>
+          <a class="type" href="#">По типу</a>
+          <a class="function" href="#">По функционалу</a>
           <a class="arrow-up" href="#"></a>
           <a class="arrow-down" href="#"></a>
-        </div>
+          </p> 
       </section>
       <!-- <section class="header">
       </section> -->
@@ -89,8 +89,8 @@
                 <label><input type="text" value="30000"></label>
               </fieldset>
               <h2>Производители:</h2>
-              <fieldset>
-                <legend class="manufacturers"></legend>
+              <fieldset class="manufacturers">
+                <!-- <legend ></legend> -->
                 <input class="checkbox checked" type="checkbox" name="area1" checked value="BOSCH">
                 <label for="area1">BOSCH</label>
                 <input class="checkbox nonchecked"type="checkbox" name="area2" value="ИНТЕРСКОЛ">
@@ -103,8 +103,8 @@
                 <label for="area5">HITACHI</label>
               </fieldset>
               <h2>Питание:</h2>
-              <fieldset>
-                <legend class="head-power"></legend>
+              <fieldset class="head-power">
+                <!-- <legend></legend> -->
                 <input class="radio-checked" type="radio" name="area6" checked value="Аккумуляторные">
                 <label for="area6">Аккумуляторные</label>
                 <input class="radio-nonchecked" type="radio" name="area7" value="Сетевые">
@@ -223,11 +223,11 @@
           </article>
         </section>
       </div>
-      <ul class="pagination wrapper">
-        <li><a>1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">Следующая</a></li>
+      <ul class="pagination-list">
+        <li class="pagination page-current"><a>1</a></li>
+        <li class="pagination"><a href="#">2</a></li>
+        <li class="pagination"><a href="#">3</a></li>
+        <li class="pagination next-page"><a href="#">Следующая</a></li>
       </ul>
       <section class="services">
         <div class="wrapper perf-information">

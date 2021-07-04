@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
@@ -24,11 +24,12 @@
             <button type="submit">Поиск</button>
           </form>
           <a class="menu bookmark" href="blank.html">Закладки: 0</a>
-          <a class="menu cart" href="blank.html">Корзина: 0</a>
+          <a class="menu cart-catalog " href="blank.html">Корзина: 10</a>
           <a class="menu catalog-button-green" href="blank.html">Оформить заказ</a>
         </div>
       </section>
-      <div class="wrapper">
+      <div class="wrapper middle-header">
+
         <p class="head-information">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <div>
           <a class="telephone-number" href="tel:+78005558628">+7 800 555-86-28</a>
@@ -65,19 +66,8 @@
       <header class="catalog-header wrapper">
         <h1 class="catalog-name">Перфораторы</h1>
       </header>
-      <section class="wrapper" >
-          <p class="filter-sort">Фильтр:</p>
-          <p class="sort">Сортировка:
-          <a class="sort-price" href="#">По цене</a>
-          <a class="type" href="#">По типу</a>
-          <a class="function" href="#">По функционалу</a>
-          <a class="arrow-up" href="#"></a>
-          <a class="arrow-down" href="#"></a>
-          </p> 
-      </section>
-      <!-- <section class="header">
-      </section> -->
-      <div class="wrapper">
+      <div class="wrapper catalog-grid">
+        <p class="filter-sort">Фильтр:</p>
         <aside class="aside-panel">
           <from class="aside-form" action="#">
             <div>
@@ -114,8 +104,15 @@
             </div>
           </from>
         </aside>
-        <section class="catalog-grid">
-          <article class="catalog-item box21">
+        <p class="sort">Сортировка:
+          <a class="sort-price" href="#">По цене</a>
+          <a class="type" href="#">По типу</a>
+          <a class="function" href="#">По функционалу</a>
+          <a class="arrow-up" href="#"></a>
+          <a class="arrow-down" href="#"></a>
+        </p>
+        <!-- <div class="catalog-items"> -->
+          <article class="catalog-item">
             <a class="catalog-ref" href="blank.html">
               <img class="catalog-image" src="img/perforators/perf-6000.jpg" width="220" height="165" alt="Перфоратор BOSCH-6000">
               <h3 class="catalog-name">Перфоратор BOSCH BFG 6000</h3>
@@ -127,7 +124,7 @@
             <a class="catalog-button-green" href="#">В закладки</a>
             </div> -->
           </article>
-          <article class="catalog-item box22">
+          <article class="catalog-item">
             <a class="catalog-ref" href="blank.html">
               <img class="catalog-image" src="img/perforators/perf-6000.jpg" width="220" height="165" alt="Перфоратор BOSCH-6000">
               <h3 class="catalog-name">Перфоратор BOSCH BFG 6000</h3>
@@ -139,7 +136,7 @@
               <a class="catalog-button-green" href="#">В закладки</a>
             </div> -->
           </article>
-          <article class="catalog-item box23">
+          <article class="catalog-item">
             <a class="catalog-ref" href="blank.html">
               <img class="catalog-image" src="img/perforators/perf-6000.jpg" width="220" height="165" alt="Перфоратор BOSCH-6000">
               <h3 class="catalog-name">Перфоратор BOSCH BFG 6000</h3>
@@ -151,7 +148,7 @@
               <a class="catalog-button-green" href="#">В закладки</a>
             </div> -->
           </article>
-          <article class="catalog-item box24">
+          <article class="catalog-item">
             <a class="catalog-ref" href="blank.html">
             <img  class="catalog-image" src="img/perforators/perf-3000.jpg" width="220" height="165" alt="Перфоратор BOSCH-3000">
               <h3 class="catalog-name">Перфоратор BOSCH BFG 3000</h3>
@@ -163,7 +160,7 @@
               <a class="catalog-button-green" href="#">В закладки</a>
             </div> -->
           </article>
-          <article class="catalog-item box25">
+          <article class="catalog-item">
             <a class="catalog-ref" href="blank.html">
               <img src="img/perforators/perf-6000.jpg" width="220" height="165" alt="Перфоратор BOSCH-6000">
               <h3 class="catalog-name">Перфоратор BOSCH BFG 6000</h3>
@@ -175,7 +172,7 @@
               <a class="catalog-button-green" href="#">В закладки</a>
             </div> -->
           </article>
-          <article class="catalog-item box26">
+          <article class="catalog-item">
             <a class="catalog-ref" href="blank.html">
               <img class="catalog-image" src="img/perforators/perf-2000.jpg" width="220" height="165" alt="Перфоратор BOSCH-2000">
               <h3 class="catalog-name">Перфоратор BOSCH BFG 2000</h3>
@@ -186,7 +183,7 @@
               <a class="catalog-button-green" href="#">В закладки</a>
             </div> -->
           </article>
-          <article class="catalog-item box27">
+          <article class="catalog-item">
             <a class="catalog-ref" href="blank.html">
               <img  class="catalog-image" src="img/perforators/perf-3000.jpg" width="220" height="165" alt="Перфоратор BOSCH-3000">
               <h3 class="catalog-name">Перфоратор BOSCH BFG 3000</h3>
@@ -198,7 +195,7 @@
               <a class="catalog-button-green" href="#">В закладки</a>
             </div> -->
           </article>
-          <article  class="catalog-item box28">
+          <article  class="catalog-item">
             <a class="catalog-ref" href="blank.html">
               <img  class="catalog-image" src="img/perforators/perf-6000.jpg" width="220" height="165" alt="Перфоратор BOSCH-6000">
               <h3 class="catalog-name">Перфоратор BOSCH BFG 6000</h3>
@@ -210,7 +207,7 @@
               <a class="catalog-button-green" href="#">В закладки</a>
             </div> -->
           </article>
-          <article class="catalog-item box29">
+          <article class="catalog-item">
             <a class="catalog-ref" href="blank.html">
               <img class="catalog-image" src="img/perforators/perf-2000.jpg" width="220" height="165" alt="Перфоратор BOSCH-2000">
               <h3 class="catalog-name">Перфоратор BOSCH BFG 2000</h3>
@@ -221,7 +218,7 @@
               <a class="catalog-button-green" href="#">В закладки</a>
             </div> -->
           </article>
-        </section>
+        <!-- </div> -->
       </div>
       <ul class="pagination-list">
         <li class="pagination page-current"><a>1</a></li>
@@ -240,7 +237,7 @@
     </main>
     <footer class="main-footer">
       <section class="wrapper">
-        <a class="footer-logo" href="#">Логотип</a>
+        <a class="logo footer-logo" href="#">Логотип</a>
         <div class="nav-white">
           <a href="blank.html">Компания</a>
           <a href="blank.html">Новости</a>
@@ -259,16 +256,20 @@
         </div>
       </section>
       <section class="bottom-footer">
-      <section class="wrapper">
+        <section class="wrapper">
           <p class="footer-cite">&copy; 2010–2021 Компания «Техномарт» <br>Все права защищены</p>
+        <div class="socials">
           <a class="socials vk" href="#">Вконтакте</a>
           <a class="socials fb" href="#">Фейсбук</a>
           <a class="socials insta" href="#">Инстаграм</a>
-          <p class="text-ref">Обратная связь:<br>  <a class="ref" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-          <p class="text-ref">Разработано - <br> <a class="ref" href="htmlacademy.ru">htmlacademy.ru</a></p>
+        </div>
+        <div class="developing">
+          <p class="text-ref">Обратная связь:<br>  <a class="text-ref ref" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+          <p class="text-ref">Разработано - <br> <a class="text-ref ref" href="htmlacademy.ru">htmlacademy.ru</a></p>
+        </div>
         </section>
       </section>
-    </footer>
+      </footer>
     <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p> -->
   </body>
 </html>

@@ -29,11 +29,11 @@
         </div>
       </section>
       <div class="wrapper middle-header">
-        <div class="wrapper">
+        <div class="wrapper company-inf">
         <p class="head-information">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <div class="adress">
+        <div class="address">
           <a class="telephone-number" href="tel:+78005558628">+7 800 555-86-28</a>
-          <p class="text">г. Санкт-Петербург, наб. Реки Карповки, 5 лит. П</p>
+          <p class="text-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит. П</p>
         </div>
         <div class="account">
         <a class="b header-user" href="blank.html" >Равшан Джамшутович</a>
@@ -56,12 +56,9 @@
     </header>
     <main>
       <div class="bread-crumbs wrapper">
-        <a class="crumbs-home" href="index.html">Домой</a>
-        <p class="arrow-crumbs"></p>
+        <a class="crumbs-home" href="index.html"></a>
         <a href="catalog.html">Каталог</a>
-        <p class="arrow-crumbs"></p>
         <a href="catalog.html">Инструмент</a>
-        <p class="arrow-crumbs"></p>
         <a href="catalog.html">Перфораторы</a>
       </div>
       <div class="wrapper">
@@ -74,7 +71,6 @@
         <aside class="aside-panel">
           <from class="aside-form" action="#">
             <div>
-              <!-- <h2>Цена:</h2> -->
               <fieldset class="catalog-filter">
               <legend class="legend-price">Цена:</legend>
                 <div class="range-filter">
@@ -100,34 +96,51 @@
                   </div>
                 </div>
               </fieldset>
-              <h2>Производители:</h2>
               <fieldset class="manufacturers">
-                <!-- <legend ></legend> -->
-                <input class="checkbox checked" type="checkbox" name="area1" checked value="BOSCH">
-                <label for="area1">BOSCH</label>
-                <input class="checkbox nonchecked"type="checkbox" name="area2" value="ИНТЕРСКОЛ">
-                <label for="area2">ИНТЕРСКОЛ</label>
-                <input class="checkbox checked" type="checkbox" name="area3" checked value="MAKITA">
-                <label for="area3">MAKITA</label>
-                <input class="checkbox nonchecked" type="checkbox" name="area4" value="DEWALT">
-                <label for="area4">DEWALT</label>
-                <input class="checkbox nonchecked" type="checkbox" name="area5" value="HITACHI">
-                <label for="area5">HITACHI</label>
+
+                <legend class="legend-price" >Производители:</legend>
+              <ul class="filter-positions">
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosh" id="area1" checked>
+                  <label class="filter-items" for="area1">BOSCH</label>
+                </li>
+                <li  class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="interscol" id="area2"  value="ИНТЕРСКОЛ">
+                  <label class="filter-items"  for="area2">ИНТЕРСКОЛ</label>
+                </li >
+                <li  class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="makite" id="area3" checked value="MAKITA">
+                  <label class="filter-items"  for="area3">MAKITA</label>
+                </li >
+                <li  class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="dewalt" id="area4" value="DEWALT">
+                  <label class="filter-items"  for="area4">DEWALT</label>
+                </li >
+                <li  class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hitachi" id="area5" value="HITACHI">
+                  <label class="filter-items"  for="area5">HITACHI</label>
+                </li >
+              </ul>
               </fieldset>
-              <h2>Питание:</h2>
               <fieldset class="head-power">
-                <!-- <legend></legend> -->
-                <input class="radio-checked" type="radio" name="area6" checked value="Аккумуляторные">
-                <label for="area6">Аккумуляторные</label>
-                <input class="radio-nonchecked" type="radio" name="area7" value="Сетевые">
-                <label for="area7">Сетевые</label>
+                <legend class="legend-price">Питание:</legend>
+                <ul class="filter-positions">
+                  <li  class="filter-option">
+                    <input class="visually-hidden filter-input-radio" type="radio" name="battery" id="area6"  checked value="Аккумуляторные">
+                    <label class="filter-items"  for="area6">Аккумуляторные</label>
+                  </li >
+                  <li  class="filter-option">
+                    <input class="visually-hidden filter-input-radio" type="radio" name="net" id="area7"   value="Сетевые">
+                    <label class="filter-items"  for="area7">Сетевые</label>
+                  </li >
+                </ul>
               </fieldset>
-              <button type="submit">Показать</button>
+              <button class="filter-show" type="submit">Показать</button>
             </div>
           </from>
         </aside>
         <p class="sort">Сортировка:
-          <a class="sort-price" href="#">По цене</a>
+          <a class="sort-price active-price" href="#">По цене</a>
           <a class="type" href="#">По типу</a>
           <a class="function" href="#">По функционалу</a>
           <a class="arrow-up" href="#"></a>
@@ -257,20 +270,23 @@
             <p class="not-catalog-old-price">30500 р.</p>
             <a class="catalog-button-arrow" href="blank.html">12500 р.</a>
           </article>
+          <ul class="pagination-list">
+            <li class="pagination page-current"><a>1</a></li>
+            <li class="pagination"><a href="#">2</a></li>
+            <li class="pagination"><a href="#">3</a></li>
+            <li class="pagination next-page"><a href="#">Следующая</a></li>
+          </ul>
         <!-- </div> -->
       </div>
-      <ul class="pagination-list">
-        <li class="pagination page-current"><a>1</a></li>
-        <li class="pagination"><a href="#">2</a></li>
-        <li class="pagination"><a href="#">3</a></li>
-        <li class="pagination next-page"><a href="#">Следующая</a></li>
-      </ul>
+
       <section class="services">
         <div class="wrapper">
+          <div class="about-perf">
             <h2 class="services-header">Пара слов о перфораторах</h2>
-            <p class="text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+            <p class="text-about-perf">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
             <br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
             <br>В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+          </div>
         </div>
       </section>
     </main>
@@ -297,18 +313,30 @@
       <section class="bottom-footer">
         <section class="wrapper">
           <p class="footer-cite">&copy; 2010–2021 Компания «Техномарт» <br>Все права защищены</p>
-        <div class="socials">
+          <div class="socials">
           <a class="socials vk" href="#">Вконтакте</a>
           <a class="socials fb" href="#">Фейсбук</a>
           <a class="socials insta" href="#">Инстаграм</a>
         </div>
         <div class="developing">
-          <p class="text-ref">Обратная связь:<br>  <a class="text-ref ref" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-          <p class="text-ref">Разработано - <br> <a class="text-ref ref" href="htmlacademy.ru">htmlacademy.ru</a></p>
+          <div class="feedback">
+            <p class="text-ref">Обратная связь:<br>  <a class="text-ref ref" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+          </div>
+          <div>
+            <p class="text-ref">Разработано - <br> <a class="text-ref ref" href="htmlacademy.ru">htmlacademy.ru</a></p>
+          </div>
         </div>
         </section>
       </section>
       </footer>
+      <section class="modal-window2">
+        <h2 class="item-in-cart">Товар добавлен в корзину!</h2>
+        <section class="modal-catalog-area">
+          <a class="catalog-button-red btn-make-order" href="blank.html">Оформить заказ</a>
+          <a class="catalog-button-white btn-cont-buy" href="blank.html">Продолжить покупки</a>
+        </section>
+        <span class="close-form"></span>
+      </section>
     <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p> -->
   </body>
 </html>

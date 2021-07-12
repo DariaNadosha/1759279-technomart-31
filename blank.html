@@ -1,75 +1,113 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Техномарт</title>
-    <link href="style.css" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicon/180.png">
-    <link rel="manifest" href="manifest.webmanifest">
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicon/180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body class="page-body">
     <header class="main-header">
       <section class="upper-header">
-        <a class="logo" href="#">Логотип</a>
-        <form class="search">
-          <input type="search" placeholder="Поиск:">
-          <button type="submit">Поиск</button>
-        </form>
-        <a class="bookmark" href="blank.html">Закладки:</a>
-        <a class="cart" href="blank.html">Корзина:</a>
-        <a class="catalog-button-green" href="blank.html">Оформить заказ</a>
+        <div class="wrapper">
+          <a class="logo" href="index.html">Логотип</a>
+          <form class="search">
+            <input type="search" placeholder="Поиск:" />
+            <button class="search-button" type="submit">Поиск</button>
+          </form>
+          <a class="menu bookmark" href="blank.html">Закладки: 0</a>
+          <a class="menu cart" href="blank.html">Корзина: 0</a>
+          <a class="menu catalog-button-green" href="blank.html"
+            >Оформить заказ</a
+          >
+        </div>
       </section>
-      <p class="head-information">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-      <a class="telephone-number" href="tel:+78005558628">+7 800 555-86-28</a>
-      <p class="text">г. Санкт-Петербург, наб. Реки Карповки, 5 лит. П</p>
-      <a class="enter" href="blank.html">Войти</a>
-      <a class="registration" href="blank.html">Регистрация</a>
-      <nav class="navigation">
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="blank.html">Компания</a></li>
-          <li><a href="blank.html">Новости</a></li>
-          <li><a href="blank.html">Спецпредложения</a></li>
-          <li><a href="blank.html">Доставка</a></li>
-          <li><a href="blank.html">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="wrapper middle-header">
+        <div class="wrapper company-inf">
+          <p class="head-information">
+            Интернет-магазин строительных материалов и инструментов для ремонта
+          </p>
+          <div class="address">
+            <a class="telephone-number" href="tel:+78005558628"
+              >+7 800 555-86-28</a
+            >
+            <p class="text-address">
+              г. Санкт-Петербург, наб. Реки Карповки, 5 лит. П
+            </p>
+          </div>
+          <div class="entering-buttons">
+            <a class="b enter" href="blank.html">Войти</a>
+            <a class="b registration" href="blank.html">Регистрация</a>
+          </div>
+        </div>
+        <nav class="navigation wrapper">
+          <a href="index.html">Главная</a>
+          <a href="blank.html">Компания</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="blank.html">Новости</a>
+          <a href="blank.html">Спецпредложения</a>
+          <a href="blank.html">Доставка</a>
+          <a href="blank.html">Контакты</a>
+        </nav>
+      </div>
     </header>
     <main>
       <p>Страница находится в разработке.</p>
     </main>
     <footer class="main-footer">
-      <section>
-        <a class="logo" href="#">Логотип</a>
-        <p class="text-footer" >г. Санкт-Петербург, наб. Реки Карповки, 5 лит П <br>+7 800 555-86-28</p>
-        <ul class="navigation-white">
-          <li><a href="blank.html">Компания</a></li>
-          <li><a href="blank.html">Новости</a></li>
-          <li><a href="blank.html">Каталог</a></li>
-          <li><a href="blank.html">Доставка</a></li>
-          <li><a href="blank.html">Контакты</a></li>
-        </ul>
-        <ul class="navigation-yellow">
-          <li><a href="blank.html">Материалы</a></li>
-          <li><a href="blank.html">Техника</a></li>
-          <li><a href="blank.html">Инструмент</a></li>
-          <li><a href="blank.html">Спецпредложения</a></li>
-        </ul>
+      <section class="wrapper">
+        <a class="logo footer-logo" href="#">Логотип</a>
+        <div class="nav-white">
+          <a href="blank.html">Компания</a>
+          <a href="blank.html">Новости</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="blank.html">Доставка</a>
+          <a href="blank.html">Контакты</a>
+        </div>
+      </section>
+      <section class="wrapper">
+        <p class="text-footer">
+          г. Санкт-Петербург, наб. Реки Карповки, 5 лит П <br />+7 800 555-86-28
+        </p>
+        <div class="nav-yellow">
+          <a href="blank.html">Материалы</a>
+          <a href="blank.html">Техника</a>
+          <a href="blank.html">Инструмент</a>
+          <a href="blank.html">Спецпредложения</a>
+        </div>
       </section>
       <section class="bottom-footer">
-        <p class="footer-cite">&copy; 2010–2021 Компания «Техномарт» <br>Все права защищены</p>
-        <a class="socials" href="#">Вконтакте</a>
-        <a class="socials" href="#">Фейсбук</a>
-        <a class="socials" href="#">Инстаграм</a>
+        <section class="wrapper">
+          <p class="footer-cite">
+            &copy; 2010–2021 Компания «Техномарт» <br />Все права защищены
+          </p>
+          <div class="socials">
+            <a class="socials vk" href="#">Вконтакте</a>
+            <a class="socials fb" href="#">Фейсбук</a>
+            <a class="socials insta" href="#">Инстаграм</a>
+          </div>
+          <div class="developing">
+            <div class="feedback">
+              <p class="text-ref">
+                Обратная связь:<br />
+                <a class="text-ref ref" href="mail@htmlacademy.ru"
+                  >mail@htmlacademy.ru</a
+                >
+              </p>
+            </div>
+            <div>
+              <p class="text-ref">
+                Разработано - <br />
+                <a class="text-ref ref" href="htmlacademy.ru">htmlacademy.ru</a>
+              </p>
+            </div>
+          </div>
+        </section>
       </section>
-      <p class="text-ref">Обратная связь:</p>
-      <a class="ref" href="mail@htmlacademy.ru"></a>mail@htmlacademy.ru</a>
-      <p class="text-ref">Разработано - </p>
-      <a class="ref" href="htmlacademy.ru">htmlacademy.ru</a>
     </footer>
-      <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p> -->
-
+    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p> -->
   </body>
 </html>

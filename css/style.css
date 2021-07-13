@@ -96,12 +96,26 @@
   text-indent: 100%;
   overflow: hidden;
   padding: 0px;
-  background: #293449 url(../img/other/icon-search.svg) no-repeat 50%;
+  background: transparent url(../img/other/icon-search.svg) no-repeat 50%;
   opacity: 0.3;
   border: none;
   width: 17px;
   height: 17px;
 }
+.search-input::placeholder {
+  color: var(--white);
+}
+.search-button:hover {
+  opacity: 1;
+}
+.search-input:focus  {
+  background-color: var(--white);
+}
+.search-input:focus + .search-button  {
+  background: url(../img/other/icon-search-red.svg) no-repeat 50%;
+  opacity: 1;
+}
+
 
 
 .menu {
@@ -806,8 +820,7 @@ margin-top: 10px;
   text-align: center;
   display: inline-block;
 }
-}
-.btn-contacts a {
+.btn-contacts  {
   padding: 11px;
   text-align: center;
   display: block;

@@ -341,10 +341,10 @@
   margin: 0px 53px 0px 23px;
 }
 .navigation a:hover {
-  background-color:var(--extra-dark) ;
+  background-color:var(--extra-dark);
 }
-.navigation a:focus {
-  background-color: #1D2739 var(-) ;
+.navigation a:active {
+  background-color: #1D2739;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1316,7 +1316,6 @@
 }
 .type:hover {
   color: rgba(0, 0, 0, 1);
-  margin: 0px 0;
   padding: 0;
   border: none;
   border-bottom: 1px solid  var(--basic-red);
@@ -1325,6 +1324,7 @@
 .type:active {
   color: var(--basic-red);
   text-decoration: none;
+  border: none;
 }
 .function{
   color: rgba(0, 0, 0, 0.25);
@@ -1337,7 +1337,6 @@
 }
 .sort-price:hover {
   color: rgba(0, 0, 0, 1);
-  margin: 0px 0;
 	padding: 0;
 	border: none;
   border-bottom: 1px solid  var(--basic-red);
@@ -1345,7 +1344,6 @@
 }
 .function:hover {
   color: rgba(0, 0, 0, 1);
-  margin: 0px 0;
 	padding: 0;
 	border: none;
   border-bottom: 1px solid  var(--basic-red);
@@ -1354,6 +1352,7 @@
 .sort-price:active {
   color: var(--basic-red);
   text-decoration: none;
+  border: none;
 }
 .active-price {
   color: var(--basic-red);
@@ -1363,6 +1362,7 @@
 .function:active {
   color: var(--basic-red);
   text-decoration: none;
+  border: none;
 }
 a.arrow-up::after {
   content: '\25b2';

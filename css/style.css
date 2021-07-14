@@ -291,7 +291,7 @@
 .registration:hover {
   color: var(--basic-red);
 }
-.registration:focus {
+.registration:active {
   color: var(--light-grey);
 }
 .enter {

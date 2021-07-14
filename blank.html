@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="style.css" rel="stylesheet" />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="img/favicon/180.png" />
-    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" >
+    <link href="normalize.css" rel="stylesheet" >
+    <link rel="icon" href="favicon.ico" >
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml" >
+    <link rel="apple-touch-icon" href="img/favicon/180.png" >
+    <link rel="manifest" href="manifest.webmanifest" >
   </head>
-  <body class="page-body">
+  <body class="body">
     <header class="main-header">
       <section class="upper-header">
         <div class="wrapper">
           <a class="logo" href="index.html">Логотип</a>
           <form class="search">
-            <input type="search" placeholder="Поиск:" />
+            <input class="search-input" type="search" placeholder="Поиск:" />
             <button class="search-button" type="submit">Поиск</button>
           </form>
           <a class="menu bookmark" href="blank.html">Закладки: 0</a>
           <a class="menu cart" href="blank.html">Корзина: 0</a>
-          <a class="menu catalog-button-green" href="blank.html"
-            >Оформить заказ</a
-          >
+          <a class="menu catalog-button-green" href="blank.html">Оформить заказ</a>
         </div>
       </section>
       <div class="wrapper middle-header">
         <div class="wrapper company-inf">
           <p class="head-information">
-            Интернет-магазин строительных материалов и инструментов для ремонта
+            Интернет-магазин строительных материалов <br />
+            и инструментов для ремонта
           </p>
           <div class="address">
-            <a class="telephone-number" href="tel:+78005558628"
-              >+7 800 555-86-28</a
-            >
+            <a class="telephone-number" href="tel:+78005558628" >+7 800 555-86-28</a>
             <p class="text-address">
-              г. Санкт-Петербург, наб. Реки Карповки, 5 лит. П
+              г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
             </p>
           </div>
           <div class="entering-buttons">
@@ -55,10 +61,10 @@
       </div>
     </header>
     <main>
-      <p>Страница находится в разработке.</p>
+      <p class="wrapper">Страница находится в разработке.</p>
     </main>
     <footer class="main-footer">
-      <section class="wrapper">
+      <section class="wrapper upper-footer">
         <a class="logo footer-logo" href="#">Логотип</a>
         <div class="nav-white">
           <a href="blank.html">Компания</a>
@@ -80,7 +86,7 @@
         </div>
       </section>
       <section class="bottom-footer">
-        <section class="wrapper">
+        <section class="wrapper upper-footer">
           <p class="footer-cite">
             &copy; 2010–2021 Компания «Техномарт» <br />Все права защищены
           </p>
@@ -93,9 +99,7 @@
             <div class="feedback">
               <p class="text-ref">
                 Обратная связь:<br />
-                <a class="text-ref ref" href="mail@htmlacademy.ru"
-                  >mail@htmlacademy.ru</a
-                >
+                <a class="text-ref ref" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </p>
             </div>
             <div>

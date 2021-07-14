@@ -21,7 +21,7 @@
   <body class="body">
     <header class="main-header">
       <section class="upper-header">
-        <div class="wrapper">
+        <div class="wrapper menu-upper">
           <a class="logo" href="index.html">Логотип</a>
           <form class="search">
             <input class="search-input" type="search" placeholder="Поиск:" />
@@ -84,9 +84,11 @@
               <a class="catalog-button-red btn-catalog" href="catalog.html">Открыть каталог</a>
           </article>
           <article class="slider2">
-            <h3 class="slider-name2">Дрели</h3>
-            <h4 class="slider-subtitle2">Соседям на радость!</h4>
-            <a class="catalog-button-red btn-catalog" href="catalog.html">Открыть каталог</a>
+            <header class="slider-title2">
+              <h3 class="slider-name2">Дрели</h3>
+              <h4 class="slider-subtitle2">Соседям на радость!</h4>
+            </header>
+              <a class="catalog-button-red btn-catalog" href="catalog.html">Открыть каталог</a>
           </article>
           <article class="blocks-sale">
             <h3 class="blocks-name">Скидки 50%</h3>
@@ -284,8 +286,8 @@
               <dd class="services-text">
                 Залезть в долговую яму стало проще! Кредитные консультанты
                 придут вам на помощь.
+                <a class="catalog-button-red btn-send" href="blank.html">Отправить заявку</a>
               </dd>
-              <button class="catalog-button-red btn-send" href="blank.html">Отправить заявку</button>
             </dl>
           </div>
         </div>
@@ -325,7 +327,7 @@
     </main>
     <footer class="main-footer">
       <section class="wrapper upper-footer">
-        <a class="logo footer-logo" href="#">Логотип</a>
+        <a class="footer-logo" href="#">Логотип</a>
         <div class="nav-white">
           <a href="blank.html">Компания</a>
           <a href="blank.html">Новости</a>
@@ -401,12 +403,11 @@
         <p class="yourletter">
           <label class="title-name" for="appointment-text">Текст письма</label>
           <textarea
-            class="fill-name"
+            class="fill-text"
             name="comment"
             id="appointment-text"
-            rows="5">
-            В свободной форме
-          </textarea>
+            rows="5"
+            placeholder="В свободной форме"></textarea>
         </p>
       </form>
       <section class="button-form-area">

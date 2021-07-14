@@ -1394,7 +1394,7 @@ a.arrow-up:active::after {
   color: var(--basic-red);
 }
 a.arrow-down:active::after {
-  content: '\25b2';
+  content: '\25bc';
   color: var(--basic-red);
 }
 a.arrow-up-active::after {

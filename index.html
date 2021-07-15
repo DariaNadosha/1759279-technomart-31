@@ -22,7 +22,13 @@
     <header class="main-header">
       <section class="upper-header">
         <div class="wrapper menu-upper">
-          <a class="logo" href="index.html">Логотип</a>
+          <a href="index.html">
+            <img
+            class="logo"
+            src="img/other/logo.svg"
+            alt="Логотип Техномарт"
+            width="220"
+            height="47"/></a>
           <form class="search">
             <input class="search-input" type="search" placeholder="Поиск:" />
             <button class="search-button" type="submit">Поиск</button>
@@ -76,19 +82,25 @@
             <h3 class="blocks-name">Техника</h3>
             <a class="blocks-button" href="catalog.html">Для стройки</a>
           </article>
-          <article class="slider1">
-            <header class="slider-title1">
-              <h3 class="slider-name1">Перфораторы</h3>
-              <h4 class="slider-subtitle1">Настоящие мужские игрушки</h4>
+          <article class="slider-perf">
+            <header class="slider-perf-title">
+              <h3 class="slider-perf-name">Перфораторы</h3>
+              <h4 class="slider-perf-subtitle">Настоящие мужские игрушки</h4>
             </header>
-              <a class="catalog-button-red btn-catalog" href="catalog.html">Открыть каталог</a>
+            <a class="catalog-button-red btn-catalog" href="catalog.html">Открыть каталог</a>
+            <svg class="slider-dot-white">
+              <circle cx="50" cy="50" r="3" fill="white" stroke="white" stroke-width="2"/>
+            </svg>
+            <svg class="slider-dot-red">
+              <circle cx="50" cy="50" r="3" fill="red" stroke="white" stroke-width="2"/>
+            </svg>
           </article>
-          <article class="slider2">
-            <header class="slider-title2">
-              <h3 class="slider-name2">Дрели</h3>
-              <h4 class="slider-subtitle2">Соседям на радость!</h4>
+          <article class="slider-drill">
+            <header class="slider-drill-title">
+              <h3 class="slider-drill-name">Дрели</h3>
+              <h4 class="slider-drill-subtitle">Соседям на радость!</h4>
             </header>
-              <a class="catalog-button-red btn-catalog" href="catalog.html">Открыть каталог</a>
+            <a class="catalog-button-red btn-catalog" href="catalog.html">Открыть каталог</a>
           </article>
           <article class="blocks-sale">
             <h3 class="blocks-name">Скидки 50%</h3>
@@ -320,14 +332,22 @@
           <img
             class="img-map"
             src="img/other/map-small.png"
-            alt="Изображение карты"/></a>
-          <br /><a class="catalog-button-red btn-contacts" href="blank.html" >Заблудились? Напишите нам!</a>
+            alt="Изображение карты"
+            width="300px"
+            height="158px"/></a>
+          <a class="catalog-button-red btn-contacts" href="blank.html" >Заблудились? Напишите нам!</a>
         </div>
       </section>
     </main>
     <footer class="main-footer">
       <section class="wrapper upper-footer">
-        <a class="footer-logo" href="#">Логотип</a>
+        <a href="index.html">
+          <img
+            class="footer-logo"
+            src="img/other/footer-logo.svg"
+            alt="Логотип Техномарт"
+            width="220"
+            height="68"/></a>
         <div class="nav-white">
           <a href="blank.html">Компания</a>
           <a href="blank.html">Новости</a>
@@ -375,9 +395,9 @@
       </section>
     </footer>
 
-    <section class="modal1">
+    <section class="modal-form">
       <form
-        class="modal-form"
+        class="form-for-sending"
         action="https://echo.htmlacademy.ru"
         method="post">
         <div class="contacts-form">
@@ -422,7 +442,18 @@
       <img
         class="img-modal-map"
         src="img/other/bigmap.png"
-        alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит. П"/>
+        alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит. П"
+        width="943px"
+        height="449px"/>
+    </section>
+    <section class="modal-item-added">
+      <h2 class="item-in-cart">Товар добавлен в корзину!</h2>
+      <section class="modal-catalog-area">
+        <a class="catalog-button-red btn-make-order" href="blank.html"
+          >Оформить заказ</a>
+        <a class="catalog-button-white btn-cont-buy" href="blank.html">Продолжить покупки</a>
+      </section>
+      <span class="close-form"></span>
     </section>
 
     <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p> -->

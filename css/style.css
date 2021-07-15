@@ -202,9 +202,9 @@
   background-color:var(--green) ;
   color: rgba(255, 255, 255, 0.5);
 }
-.menu-upper:active .search-input::placeholder  {
+/* .menu-upper:active .search-input::placeholder  {
   color: rgba(255, 255, 255, 0.5);
-}
+} */
 .middle-header {
   margin-bottom: 40px;
   margin-top: -9px;
@@ -269,7 +269,7 @@
 .entering-buttons {
   margin-top: 12px;
 }
-.b {
+.entering {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   text-align: center;
@@ -328,15 +328,15 @@
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   color: var(--white);
-  margin: 0px 23px 0px 23px;
-  padding: 15px 0px 18px 0px;
+  margin: 0px 0px 0px 0px;
+  padding: 15px 24px 18px 27px;
   text-decoration: none;
 }
 .navigation a:first-child {
-  margin: 0px 23px 0px 53px
+  margin: 0px 0px 0px 25px;
 }
 .navigation a:last-child {
-  margin: 0px 53px 0px 23px;
+  margin: 0px 25px 0px 0px;
 }
 .navigation a:hover {
   background-color:var(--extra-dark);
@@ -608,7 +608,7 @@
 .card-hover {
   position: absolute;
   left: 0;
-  top: -3px;
+  top: 1px;
   background-color: white;
   opacity: 0;
   padding-left: 41px;
@@ -771,7 +771,7 @@
 .producers:hover {
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
 }
-.producers:focus {
+.producers:active {
   opacity: 0.5;
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
 }
@@ -919,10 +919,10 @@
   margin-bottom: 66px;
   align-items: stretch;
 }
-.text-contacts1 {
+.contacts-paragraph-shopping {
   margin-bottom: 6px;
 }
-.text-contacts2 {
+.contacts-paragraph-delivery {
   margin-top: 27px;
 }
 .service-contacts {
@@ -942,13 +942,13 @@
   margin-left: -40px;
   padding-left: 38px;
 }
-.l-name1 {
+.list-name1 {
   margin-top: -14px;
 }
-.l-name2 {
+.list-name2 {
   margin-top: 4px;
 }
-.l-name3 {
+.list-name3 {
   margin-top: 6px;
 }
 .btn-company {
@@ -1557,6 +1557,11 @@ a.arrow-up-active::after {
   background-image: url("../img/other/radio-on-hover.svg");
   background-repeat: no-repeat;
 }
+/* .filter-input-radio:disabled:checked + label {
+
+  background-image: url("../img/other/radio-on-disabled.svg");
+  background-repeat: no-repeat; */
+
 /* Catalog items*/
 
 .catalog-grid {
@@ -1605,12 +1610,8 @@ a.arrow-up-active::after {
 .pagination a:hover {
   border: 1px solid #C5C5C5;
 }
-.pagination a:focus {
+.pagination a:active{
   border: 1px solid #EE3643;
-}
-.pagination a:active {
-  background: #EE3643;
-  color: var(--white);
 }
 .page-current a {
   background: #EE3643;

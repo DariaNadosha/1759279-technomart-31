@@ -394,26 +394,45 @@
   height: 266px;
   position: relative;
 }
-.slider-perf::after {
-  content: '';
-  background: url(../img/other/arrow-slider-right.svg),
-              url(../img/other/arrow-slider-left.svg);
-  background-repeat: no-repeat,
-                     no-repeat;
-  position: absolute;
-  width: 576px;
-  height: 40px;
-  background-position: right 0, left 0 , bottom;
-  left: 23px;
-  bottom: 100px;
-}
 .slider-dot-white {
-  position:absolute;
+  position: relative;
+  text-indent: 100%;
   margin: 62px 36px;
+  background-color: white;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
 }
 .slider-dot-red {
-  position:absolute;
   margin: 62px 57px;
+  background-color: var(--basic-red);
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+.slider-arrow-right {
+  background: url(../img/other/arrow-slider-right.svg) no-repeat;
+  cursor: pointer;
+  position: relative;
+  width: 24px;
+  height: 45px;
+  border: none;
+  right: 30px;
+  float: right;
+}
+.slider-arrow-left {
+  background: url(../img/other/arrow-slider-left.svg) no-repeat;
+  cursor: pointer;
+  position: relative;
+  width: 24px;
+  height: 48px;
+  order: none;
+  float: left;
+  right: 196px;
 }
 .slider-perf-title {
   background-color: rgba(0, 0, 0, 0.3);

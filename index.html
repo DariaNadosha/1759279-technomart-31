@@ -30,7 +30,8 @@
             width="108"
             height="18"/></a>
           <form class="search">
-            <label><input class="search-input" type="search" placeholder="Поиск:" /></label>
+            <label for="search"></label>
+            <input class="search-input" type="search" id="search" placeholder="Поиск:" />
             <button class="search-button" type="submit">Поиск</button>
           </form>
           <a class="menu bookmark" href="blank.html">Закладки: 0</a>
@@ -399,7 +400,7 @@
       </section>
     </footer>
 
-    <section class="modal-form modal-active">
+    <section class="modal-form modal-disp-none modal-active">
       <form
         class="form-for-sending"
         action="https://echo.htmlacademy.ru"
@@ -441,8 +442,8 @@
       </section>
       <button class="close-form" type="button">Закрыть</button>
     </section>
-    <section class="modal-map">
-      <button class="close-form modal-active" type="button">Закрыть</button>
+    <section class="modal-map modal-disp-none modal-active">
+      <button class="close-form" type="button">Закрыть</button>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8180266155737!2d30.315192316187943!3d59.968341981886965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0x74d4f0cbfe1fd995!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDUg0LrQvtGA0L_Rg9GBINCfLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk3MDIy!5e0!3m2!1sru!2sru!4v1626601489027!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       <img
         class="img-modal-map"
@@ -451,7 +452,7 @@
         width="943"
         height="449"/>
     </section>
-    <section class="modal-item-added">
+    <section class="modal-item-added modal-disp-none modal-active">
       <section class="item-area">
         <h2 class="item-in-cart">Товар добавлен в корзину!</h2>
       </section>

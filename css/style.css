@@ -1813,9 +1813,6 @@ a.arrow-up-active::after {
 }
 /* Modal-form*/
 
-.modal-active {
-  transform: translate(-50%, -50%);
-}
 .modal-form {
   position: fixed;
   left: 50%;
@@ -1916,14 +1913,12 @@ a.arrow-up-active::after {
 
 /* Modal map */
 .modal-map {
-  display: none;
   position: fixed;
   left: 50%;
   top: 50%;
   background-color: var(--white);
-  transform: translate(-50%, -50%);
   transition: .5s;
-  /* transform: translate(-50%, -500%); */
+  transform: translate(-50%, -500%);
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
   border-top: 5px solid var(--basic-red);
 }
@@ -1941,14 +1936,12 @@ a.arrow-up-active::after {
 
 /* Modal-cart */
 .modal-item-added {
-  display: none;
   position: fixed;
   left: 50%;
   top: 50%;
   background-color: var(--white);
-  transform: translate(-50%, -50%);
   transition: .5s;
-  /* transform: translate(-50%, -500%); */
+  transform: translate(-50%, -500%);
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
   border-top: 7px solid var(--basic-red);
   width: 620px;
@@ -1995,4 +1988,9 @@ a.arrow-up-active::after {
   text-transform: uppercase;
   text-decoration: none;
 }
-
+.modal-disp-none {
+  display: none;
+}
+.modal-active {
+  transform: translate(-50%, -50%);
+}
